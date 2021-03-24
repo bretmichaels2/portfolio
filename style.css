@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oi&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
+  color: white;
+  margin: auto;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: normal;
+  font-family: "Oi";
+}
+
+h2 {
+  font-family: "Oi";
+  font-weight: normal;
+  font-size: 34px;
+}
+
+h3 {
+  font-family: "Alfa Slab One";
+  font-size: 24px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  outline:none;
+}
+
+.arrow {
+  font-size: 24px;
+}
+
+#navbar {
+  display: none;
+  position: fixed;
+  flex-align: row;
+  font-family: "Alfa Slab One";
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  z-index: 5;
+  background: #fcba03;
+}
+
+.navbar {
+  float: right;
+  padding-right: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar:hover {
+  color: #ff4000;
+}
+
+.dropicon {
+  display: none;
+  font-size: 36px;
+}
+
+.dropicon:hover {
+  color: #ff4000;
+}
+
+.dropdown {
+  display: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.dropdown:hover {
+  color: #ff4000;
+}
+
+#welcome-section {
+  background: black;
+  text-align: center;
+  height: 800px;
+  color: #fcba03;
+}
+
+#title {
+  width: 450px;
+  text-align: left;
+  margin: auto;
+  padding: 270px 0px 30px 0px;
+}
+
+#titlearrow {
+  display: none;
+}
+
+#welcome-section a {
+  color: #ff4000;
+}
+
+#welcome-section a:hover {
+  color: white;
+}
+
+#name {
+  display: inline;
+}
+
+#cursor {
+  color: white;
+  background: white;
+  display: inline;
+  position: absolute;
+  font-size: 45px;
+  margin: -5px 0px 0px 5px;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#about a {
+  color: #fcba03;
+}
+
+#about a:hover {
+  color: white;
+}
+
+#about {
+  background: #ff4000;
+  color: white;
+  overflow: hidden;
+  padding: 50px 0px 100px 0px;
+  font-family: "Montserrat";
+  text-align: center;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+#phonearrow {
+  display: none;
+}
+
+.aboutgrid {
+  display: grid;
+  padding-bottom: 50px;
+  margin-top: -25px;
+  grid-template-columns: 300px 250px 300px;
+  justify-content: space-evenly;
+}
+
+.abouttile2 {
+  text-align: justify;
+  margin-top: 40px;
+}
+
+.abouttile3 {
+  margin-top: 10px;
+}
+
+.abouttile3 ul {
+  column-count: 2;
+  margin: -15px 0px 0px 25px;
+  width: 200px;
+  list-style-type: none;
+  font-family: "Montserrat";
+  text-align: left;
+}
+
+#image {
+  width: 150px;
+  height: 150px;
+  clip-path: circle(50% at 50% 50%);
+}
+
+#svg {
+  animation: out 1s ease-in-out;
+  margin-bottom: -230px;
+  fill: #fcba03;
+}
+
+#svg:hover {
+  animation: in 2s ease-in-out;
+}
+
+@keyframes out {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes in {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#portfolio {
+  margin-top: -100px;
+  background: white;
+  font-family: "Oi";
+  text-align: center;
+  color: black;
+  z-index: -1;
+  padding: 100px 0px;
+}
+
+#portfolio h2 {
+  color: #ff4000;
+  margin-bottom: 0px;
+}
+
+#portfolio a {
+  color: #ff4000;
+}
+
+#portfolio a:hover {
+  color: #fcba03;
+}
+
+#portfolio .arrow {
+  color: #fcba03;
+}
+
+#portfolio .arrow:hover {
+  color: black;
+}
+
+.portfoliogrid {
+  display: grid;
+  padding: 30px 20px;
+  grid-gap: 50px 20px;
+  grid-template-columns: 150px auto auto 150px;
+  justify-content: space-evenly;
+}
+
+.portfoliogrid p {
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+
+a img:hover{
+	outline: 1px solid;
+}
+
+a img:focus{
+	outline: 1px solid;
+}
+
+.portfoliogrid img {
+  width: 300px;
+}
+
+#contact {
+  background: #fcba03;
+  color: black;
+  text-align: center;
+  bottom: 0;
+  padding: 30px 0px 40px 0px;
+  margin-top: -50px;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+}
+
+#contact h3 {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+#contact a {
+  color: white;
+}
+
+#contact a:hover {
+  color: #ff4000;
+}
+
+#contact .arrow {
+  color: #ff4000;
+}
+
+#contact .arrow:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  #about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  #about h2 {
+    margin-bottom: 5px;
+  }
+
+  #phonearrow {
+    display: inline;
+  }
+
+  #aboutarrow {
+    display: none;
+  }
+
+  .aboutgrid {
+    padding-top: 30px;
+    margin: auto;
+    grid-template-columns: 300px;
+  }
+
+  .abouttile2 {
+    padding-top: 30px;
+  }
+
+  .abouttile3 {
+    padding-top: 10px;
+  }
+
+  .portfoliogrid {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  #navbar {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .dropicon {
+    display: inline-block;
+  }
+
+  #title {
+    padding-top: 250px;
+    width: 340px;
+  }
+
+  #cursor {
+    font-size: 32px;
+  }
+
+  #about {
+    padding-top: 70px;
+  }
+
+  .portfoliogrid {
+    grid-template-columns: auto;
+    grid-gap: 10px 20px;
+  }
+
+  .portfoliotile2 {
+    grid-area: 1;
+  }
+
+  .portfoliotile6 {
+    grid-area: 5;
+  }
+
+  #contact h3 {
+    width: 250px;
+    margin: auto;
+  }
+}
