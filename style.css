@@ -344,7 +344,77 @@ a img:focus{
     grid-template-columns: auto auto;
   }
 }
-@media only screen and (max-device-width: 650px) {
+
+@media only screen and (max-device-width: 650px) 
+	and (orientation: landscape) {
+}
+h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  #navbar {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .dropicon {
+    display: inline-block;
+  }
+
+  #title {
+    padding-top: 250px;
+    width: 340px;
+  }
+
+  #cursor {
+    font-size: 32px;
+  }
+#about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  #about h2 {
+    margin-bottom: 5px;
+  }
+
+  #phonearrow {
+    display: inline;
+  }
+
+  #aboutarrow {
+    display: none;
+  }
+
+  .aboutgrid {
+    padding-top: 30px;
+    margin: auto;
+    grid-template-columns: 300px;
+  }
+
+  .abouttile2 {
+    padding-top: 30px;
+  }
+
+  .abouttile3 {
+    padding-top: 10px;
+  }
+
+  .portfoliogrid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-device-width: 650px) 
+	and (orientation: portrait) {
   h1 {
     font-size: 32px;
   }
