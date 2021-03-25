@@ -381,12 +381,19 @@ a img:focus{
   h2 {
     font-size: 28px;
   }
-
+  #navbar {
+    text-align: center;
+  }
+  .navbar {
+    display: none;
+  }
+  .dropicon {
+    display: inline;
+  }
   #title {
     padding-top: 250px;
     width: 340px;
   }
-
   #cursor {
     font-size: 32px;
   }
@@ -416,34 +423,7 @@ a img:focus{
 
 /* landscape tablet */
 
-@media only screen and (max-device-width: 1200px)
-	and (orientation: lanscape) {
-	#navbar {
-		text-align: center;
-	}
-	.navbar {
-		display: none;
-	}
-	.dropicon {
-		display: inline;
-	}
-}
-
-
 /* portrait tablet */
-
-@media only screen and (max-device-width: 1200px)
-	and (orientation: portrait) {
-	#navbar {
-		text-align: center;
-	}
-	.navbar {
-		display: none;
-	}
-	.dropicon {
-		display: inline;
-	}
-}
 
 /* landscape phone */
 
