@@ -3,6 +3,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/*global*/
+
 body {
   background: black;
   color: white;
@@ -39,6 +41,8 @@ a {
 .arrow {
   font-size: 24px;
 }
+
+/*nav*/
 
 #navbar {
   display: none;
@@ -83,6 +87,8 @@ a {
   color: #ff4000;
 }
 
+/*welcome*/
+
 #welcome-section {
   background: black;
   text-align: center;
@@ -113,6 +119,8 @@ a {
   display: inline;
 }
 
+/*typing animation*/
+
 #cursor {
   color: white;
   background: white;
@@ -137,6 +145,9 @@ a {
     opacity: 1;
   }
 }
+
+/*about section*/
+
 #about a {
   color: #fcba03;
 }
@@ -185,6 +196,8 @@ a {
   text-align: left;
 }
 
+/*image animation*/
+
 #image {
   width: 150px;
   height: 150px;
@@ -221,6 +234,9 @@ a {
     transform: rotate(360deg);
   }
 }
+
+/*portfolio*/
+
 #portfolio {
   margin-top: -100px;
   background: white;
@@ -277,6 +293,9 @@ a img:focus{
   width: 300px;
 }
 
+/*footer*/
+
+
 #contact {
   background: #fcba03;
   color: black;
@@ -308,7 +327,12 @@ a img:focus{
   color: white;
 }
 
-@media screen and (max-device-width: 900px) {
+/*RESPONSIVE!!!!!!*/
+
+
+/*medium browser*/
+
+@media only screen and (max-width: 1000px) {
   #about {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -345,95 +369,15 @@ a img:focus{
   }
 }
 
-@media screen and (max-device-width: 650px) 
-	and (orientation: landscape) {
-}
-h1 {
-    font-size: 32px;
-  }
+/*small browser*/
 
-  h2 {
-    font-size: 28px;
-  }
-
-  #navbar {
-    text-align: center;
-    padding: 5px;
-  }
-
-  .navbar {
-    display: none;
-  }
-
-  .dropicon {
-    display: inline-block;
-  }
-
-  #title {
-    padding-top: 250px;
-    width: 340px;
-  }
-
-  #cursor {
-    font-size: 32px;
-  }
-#about {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
-  #about h2 {
-    margin-bottom: 5px;
-  }
-
-  #phonearrow {
-    display: inline;
-  }
-
-  #aboutarrow {
-    display: none;
-  }
-
-  .aboutgrid {
-    padding-top: 30px;
-    margin: auto;
-    grid-template-columns: 300px;
-  }
-
-  .abouttile2 {
-    padding-top: 30px;
-  }
-
-  .abouttile3 {
-    padding-top: 10px;
-  }
-
-  .portfoliogrid {
-    grid-template-columns: auto auto;
-  }
-}
-
-@media screen and (max-device-width: 650px) 
-	and (orientation: portrait) {
+@media only screen and (max-width: 600px)  {
   h1 {
     font-size: 32px;
   }
 
   h2 {
     font-size: 28px;
-  }
-
-  #navbar {
-    text-align: center;
-    padding: 5px;
-  }
-
-  .navbar {
-    display: none;
-  }
-
-  .dropicon {
-    display: inline-block;
   }
 
   #title {
@@ -467,3 +411,38 @@ h1 {
     margin: auto;
   }
 }
+
+/* landscape tablet */
+
+@media only screen and (max-device-width: 1000px)
+	and (orientation: lanscape) {
+	#navbar {
+		text-align: center;
+	}
+	.navbar {
+		display: none;
+	}
+	.dropicon {
+		display: inline;
+	}
+}
+
+
+/* portrait tablet */
+
+@media only screen and (max-device-width: 1000px)
+	and (orientation: portrait) {
+	#navbar {
+		text-align: center;
+	}
+	.navbar {
+		display: none;
+	}
+	.dropicon {
+		display: inline;
+	}
+}
+
+/* landscape phone */
+
+/* portrait tablet */
