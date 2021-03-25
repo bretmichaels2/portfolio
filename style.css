@@ -416,7 +416,7 @@ a img:focus{
 
 /* landscape tablet */
 
-@media only screen and (max-device-width: 1024px)
+@media only screen and (max-device-width: 1200px)
 	and (orientation: lanscape) {
 	#navbar {
 		text-align: center;
@@ -432,7 +432,7 @@ a img:focus{
 
 /* portrait tablet */
 
-@media only screen and (max-device-width: 1024px)
+@media only screen and (max-device-width: 1200px)
 	and (orientation: portrait) {
 	#navbar {
 		text-align: center;
