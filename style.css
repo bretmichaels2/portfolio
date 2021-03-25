@@ -308,7 +308,7 @@ a img:focus{
   color: white;
 }
 
-@media only screen and (max-device-width: 900px) {
+@media screen and (max-device-width: 900px) {
   #about {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -345,7 +345,7 @@ a img:focus{
   }
 }
 
-@media only screen and (max-device-width: 650px) 
+@media screen and (max-device-width: 650px) 
 	and (orientation: landscape) {
 }
 h1 {
@@ -413,7 +413,7 @@ h1 {
   }
 }
 
-@media only screen and (max-device-width: 650px) 
+@media screen and (max-device-width: 650px) 
 	and (orientation: portrait) {
   h1 {
     font-size: 32px;
