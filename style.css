@@ -305,7 +305,7 @@ a img:focus{
 }
 
 @media only screen and (max-device-width: 900px)
-	and (-webkit-min-device-pixel-ratio: 3) {
+	and (-webkit-min-device-pixel-ratio: 2) {
   #about {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -342,7 +342,7 @@ a img:focus{
   }
 }
 @media only screen and (max-device-width: 650px)
-	and (-webkit-min-device-pixel-ratio: 3) {
+	and (-webkit-min-device-pixel-ratio: 2) {
   h1 {
     font-size: 32px;
   }
