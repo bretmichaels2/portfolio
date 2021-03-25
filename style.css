@@ -332,7 +332,8 @@ a img:focus{
 
 /*medium browser*/
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) 
+	and (min-device-width: 1000px) {
   #about {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -371,7 +372,8 @@ a img:focus{
 
 /*small browser*/
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 600px)  
+	and (min-device-width: 1000px) {
   h1 {
     font-size: 32px;
   }
