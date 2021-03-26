@@ -426,6 +426,16 @@ a img:focus{
 
 @media only screen and (max-device-width: 1200px)  
 	and (orientation: landscape) {
+  #navbar {
+    text-align: center;
+	padding: 5px;
+  }
+  .navbar {
+    display: none;
+  }
+  .dropicon {
+    display: inline;
+  }	
    #about {
     padding-top: 80px;
     padding-bottom: 80px;
