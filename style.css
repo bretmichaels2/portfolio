@@ -494,7 +494,34 @@ a img:focus{
   }
 
   #about {
-    padding-top: 70px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  #about h2 {
+    margin-bottom: 5px;
+  }
+
+  #phonearrow {
+    display: inline;
+  }
+
+  #aboutarrow {
+    display: none;
+  }
+
+  .aboutgrid {
+    padding-top: 30px;
+    margin: auto;
+    grid-template-columns: 300px;
+  }
+
+  .abouttile2 {
+    padding-top: 30px;
+  }
+
+  .abouttile3 {
+    padding-top: 10px;
   }
 
   .portfoliogrid {
