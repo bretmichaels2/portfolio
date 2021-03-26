@@ -69,7 +69,7 @@ a {
 
 .dropicon {
   display: none;
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .dropicon:hover {
@@ -383,6 +383,7 @@ a img:focus{
   }
   #navbar {
     text-align: center;
+	padding: 5px;
   }
   .navbar {
     display: none;
@@ -421,10 +422,96 @@ a img:focus{
   }
 }
 
-/* landscape tablet */
+/* phone landscape */
 
-/* portrait tablet */
+@media only screen and (max-device-width: 1200px)  
+	and (orientation: landscape) {
+   #about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
-/* landscape phone */
+  #about h2 {
+    margin-bottom: 5px;
+  }
 
-/* portrait tablet */
+  #phonearrow {
+    display: inline;
+  }
+
+  #aboutarrow {
+    display: none;
+  }
+
+  .aboutgrid {
+    padding-top: 30px;
+    margin: auto;
+    grid-template-columns: 300px;
+  }
+
+  .abouttile2 {
+    padding-top: 30px;
+  }
+
+  .abouttile3 {
+    padding-top: 10px;
+  }
+
+  .portfoliogrid {
+    grid-template-columns: auto auto;
+  }
+}
+
+
+
+/* phone portrait */
+
+@media only screen and (max-device-width: 1200px)  
+	and (orientation: portrait) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  #navbar {
+    text-align: center;
+	padding: 5px;
+  }
+  .navbar {
+    display: none;
+  }
+  .dropicon {
+    display: inline;
+  }
+  #title {
+    padding-top: 250px;
+    width: 340px;
+  }
+  #cursor {
+    font-size: 32px;
+  }
+
+  #about {
+    padding-top: 70px;
+  }
+
+  .portfoliogrid {
+    grid-template-columns: auto;
+    grid-gap: 10px 20px;
+  }
+
+  .portfoliotile2 {
+    grid-area: 1;
+  }
+
+  .portfoliotile6 {
+    grid-area: 5;
+  }
+
+  #contact h3 {
+    width: 250px;
+    margin: auto;
+  }
+}
